@@ -181,6 +181,8 @@ namespace VendasConsole {
         public static void RegistrarVenda() {
             Title = "Registro de Venda:";
 
+            try {
+
             WriteLine("Digite o ID da Venda");
             int idVenda = Convert.ToInt32(ReadLine());
 
@@ -190,11 +192,11 @@ namespace VendasConsole {
 
             WriteLine("Digite o ID do Vendedor");
             int idVendedor = Convert.ToInt32(ReadLine());
+
             var vendedor = Vendedores.First<Vendedor>(v => v.Id == idVendedor);
 
             var produtos = escolherProdutos();
 
-            try {
                 Vendas.Add(new Venda(idVenda, cliente, vendedor, produtos));
                 WriteLine("Venda realizada com sucesso");
             } catch (Exception e) {
