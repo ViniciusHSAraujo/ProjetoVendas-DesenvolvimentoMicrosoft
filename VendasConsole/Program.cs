@@ -240,7 +240,7 @@ namespace VendasConsole {
             bool continuar = true;
             do {
                 Clear();
-
+                WriteLine("Escolha uma opção:");
                 WriteLine("1 - Adicionar Produto");
                 WriteLine("0 - Sair");
                 opcao = Convert.ToInt32(ReadLine());
@@ -253,13 +253,13 @@ namespace VendasConsole {
                         WriteLine("Digite a quantidade desejada do produto:");
                         int qtdeProd = Convert.ToInt32(ReadLine());
 
-                        if(prodEscolhido.Quantidade > qtdeProd) {
+                        if(prodEscolhido.Quantidade >= qtdeProd) {
                             prodEscolhido.Quantidade -= qtdeProd;
                             Produto produtoCompra = new Produto(prodEscolhido.Nome, qtdeProd);
                             produtosEscolhidos.Add(produtoCompra);
                             WriteLine("Produto adicionado com sucesso em sua lista de compras.\n");
                         } else {
-                            WriteLine("Quantidade indisponível.");
+                            throw new Exception("Quantidade indisponível.");
                         }
 
 
@@ -269,7 +269,7 @@ namespace VendasConsole {
                         break;
                 }
 
-            } while (continuar && produtosEscolhidos.Count() != 0);
+            } while (continuar && produtosEscolhidos.Count() >= 0);
             return produtosEscolhidos;
         }
     }

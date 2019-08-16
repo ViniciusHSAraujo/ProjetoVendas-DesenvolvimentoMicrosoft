@@ -1,0 +1,7 @@
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\bin\Release\VendasConsole.exe.config
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\bin\Release\VendasConsole.exe
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\bin\Release\VendasConsole.pdb
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\obj\Release\VendasConsole.csprojAssemblyReference.cache
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\obj\Release\VendasConsole.csproj.CoreCompileInputs.cache
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\obj\Release\VendasConsole.exe
+C:\Users\vinic\Desktop\Positivo\Desenvolvimento Microsoft\ProjetoVendas\VendasConsole\obj\Release\VendasConsole.pdb

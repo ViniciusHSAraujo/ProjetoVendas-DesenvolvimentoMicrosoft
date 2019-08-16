@@ -9,6 +9,7 @@ namespace VendasConsole {
     class Produto {
 
         public int Id { get; set; }
+
         public string Nome { get; set; }
 
         public double Preco { get; set; }
@@ -41,8 +42,8 @@ namespace VendasConsole {
         public override string ToString() {
             return $"ID: {Id}\n" +
                    $"NOME: {Nome}\n" +
-                   $"PREÇO: {Preco}\n" +
-                   $"QUANTIDADE:`{Quantidade}\n" +
+                   $"PREÇO: {Preco.ToString("C")}\n" +
+                   $"QUANTIDADE:{Quantidade}\n" +
                    $"DATA DE CADASTRO: {DataCadastro}\n\n"; ;
         }
 

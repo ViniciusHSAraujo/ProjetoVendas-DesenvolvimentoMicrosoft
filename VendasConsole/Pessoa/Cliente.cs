@@ -49,7 +49,7 @@ namespace VendasConsole {
             return !Clientes.Any<Cliente>(cli => cli.Id.Equals(id));
         }
         public override bool IsNovoCPF(String cpf) {
-            return !Clientes.Any<Cliente>(cli => cli.CPF.Equals(cpf));
+            return !Clientes.Any(cli => cli.CPF.Equals(cpf));
         }
         public Cliente BuscarClientePeloID(int id) {
             return Clientes.Find(cli => cli.Id == id);
